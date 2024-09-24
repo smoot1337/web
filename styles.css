@@ -1,0 +1,103 @@
+/* Стиль для заголовка сторінки */
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Зміна шрифту на Poppins */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700; /* Напівжирний шрифт */
+}
+
+
+/* Стиль для меню навігації */
+nav {
+    background-color: #333; /* Темний фон для меню */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Стиль для меню навігації */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Зміна шрифту на Poppins */
+}
+
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif; /* Використовуємо шрифт Poppins */
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.bio {
+    max-width: 600px;
+    text-align: left;
+}
+
+.bio p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.bio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bio ul li {
+    margin-bottom: 10px;
+}
+
+.bio ul li a {
+    color: #0066cc; /* Синє посилання */
+    text-decoration: none;
+}
+
+.bio ul li a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
