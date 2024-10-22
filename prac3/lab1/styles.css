@@ -1,0 +1,187 @@
+/* Загальні стилі для тіла */
+* {
+    box-sizing: border-box; /* Включає padding і border в ширину елементів */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стилі заголовків */
+header h1, h2 {
+    text-align: center;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+/* Стиль для меню навігації */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Стилі для форми авторизації */
+form {
+    max-width: 500px;
+    margin: 20px auto; /* Центрує форму */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Стилі для блоку "Про мене" */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.bio {
+    max-width: 600px;
+    text-align: left;
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bio ul li {
+    margin-bottom: 10px;
+}
+
+.bio ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bio ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для загальних посилань */
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+a:active {
+    background-color: #555;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Додатковий стиль для відступів між пунктами */
+p {
+    margin-bottom: 15px;
+}
