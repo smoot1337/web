@@ -1,19 +1,35 @@
-/* Стиль для заголовка сторінки */
-header h1 {
+/* Загальні стилі для тіла */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
     text-align: center;
-    font-size: 36px;
-    color: #222;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif; /* Зміна шрифту на Poppins */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700; /* Напівжирний шрифт */
 }
 
+/* Стилі заголовків */
+header h1, h2 {
+    text-align: center;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 28px;
+}
 
 /* Стиль для меню навігації */
 nav {
-    background-color: #333; /* Темний фон для меню */
+    background-color: #333;
     padding: 10px 0;
 }
 
@@ -33,7 +49,6 @@ nav ul li:last-child {
     margin-right: 0;
 }
 
-/* Стиль для меню навігації */
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -42,21 +57,13 @@ nav ul li a {
     background-color: #444;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-family: 'Poppins', sans-serif; /* Зміна шрифту на Poppins */
 }
-
 
 nav ul li a:hover {
     background-color: #555;
 }
 
-h2 {
-    text-align: center;
-    font-size: 28px;
-    font-family: 'Poppins', sans-serif; /* Використовуємо шрифт Poppins */
-    margin-bottom: 20px;
-}
-
+/* Стилі для блоку "Про мене" */
 .about-content {
     display: flex;
     justify-content: center;
@@ -79,9 +86,7 @@ h2 {
 
 .bio p {
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
 }
 
 .bio ul {
@@ -94,10 +99,42 @@ h2 {
 }
 
 .bio ul li a {
-    color: #0066cc; /* Синє посилання */
+    color: #fff;
     text-decoration: none;
 }
 
 .bio ul li a:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+    text-decoration: underline;
+}
+
+/* Стилі для загальних посилань */
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+a:active {
+    background-color: #555;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Додатковий стиль для відступів між пунктами */
+p {
+    margin-bottom: 15px;
 }

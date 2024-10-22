@@ -39,7 +39,7 @@ body {
 
 .main-nav ul li a, .secondary-nav ul li a, .subscriptions ul li a {
     text-decoration: none;
-    color: #606060;
+    color: black;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -109,23 +109,30 @@ body {
 
 .video-card {
     width: 320px;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
-    padding: 10px;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
 }
 
 .video-card img {
     width: 100%;
-    border-radius: 4px;
+    height: auto;
+    display: block;
 }
 
 .video-card h4 {
     font-size: 16px;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .video-card p {
-    color: #606060;
     font-size: 14px;
+    color: #606060;
+    margin: 5px 10px;
+}
+
+.video-card p:nth-child(3) {
+    font-weight: bold;
+    color: #000;
 }
