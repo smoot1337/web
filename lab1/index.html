@@ -24,22 +24,40 @@
     <h1>Лабораторна робота №1</h1>
     <form action="https://webhook.site/729e99a5-a92b-4934-a44e-04c081ec7b7d" method="post">
 
-        <label for="firstName">Ім'я:</label>
-        <input type="text" id="firstName" name="firstName" required><br><br>
+        <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]+" title="Ім'я має складатися лише з букв.">
+            <br><br>
 
-        <label for="lastName">Прізвище:</label>
-        <input type="text" id="lastName" name="lastName" required><br><br>
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" required pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]+" title="Прізвище має складатися лише з букв.">
+            <br><br>
 
-        <label for="email">Електронна пошта:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
 
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" required><br><br>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
 
-        <label for="confirmPassword">Підтвердіть пароль:</label>
-        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+            <label for="confirm-password">Підтвердіть пароль:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <br><br>
 
-        <input type="submit" value="Зареєструватись">
+            <label for="dob">Дата народження:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <label for="gender">Стать:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Оберіть стать</option>
+                <option value="male">Чоловіча</option>
+                <option value="female">Жіноча</option>
+                <option value="other">Інша</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Зареєструватися">
     </form>
 </body>
 </html>
