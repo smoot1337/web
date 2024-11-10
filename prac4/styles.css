@@ -1,0 +1,169 @@
+/* Основные стили для клавиатуры */
+.keyboard {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-keyboard-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+  }
+  
+  /* Базовый стиль для всех клавиш */
+  .key {
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .key:active {
+    background: #ddd;
+    transform: translateY(2px);
+  }
+  
+  /* Функциональные клавиши */
+  .function-key {
+    background: #f0f0f0;
+    min-width: 50px;
+  }
+  
+  /* Специальные размеры клавиш */
+  .wide-key {
+    min-width: 90px;
+  }
+  
+  .extra-wide-key {
+    min-width: 115px;
+  }
+  
+  .space-key {
+    min-width: 310px;
+  }
+  
+  /* Маленький текст */
+  .small {
+    font-size: 12px;
+    min-width: 50px;
+  }
+  
+  /* Средняя секция */
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 35px;
+  }
+  
+  .middle-section .middle-row {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+  }
+  
+  .middle-section .middle-row .key {
+    min-width: 50px;
+    margin: 0;
+  }
+  
+  /* Стрелки */
+  .arrows {
+    margin-top: 35px;
+  }
+  
+  .arrow-row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  /* Цифровой блок */
+  .numpad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    position: relative;
+    margin-top: -55px;
+  }
+  
+  .numpad .row {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+  }
+  
+  /* Настройка для кнопки 0 и . */
+  .numpad .row:last-child .key:first-child {
+    min-width: 110px;
+  }
+  
+  /* Настройка для кнопки . */
+  .numpad .row:last-child .key:last-child {
+    min-width: 70px;
+  }
+  
+  /* Поднятие кнопок 1, 2, 3, 0 и . */
+  .numpad .row:nth-child(2) .key:not(:last-child),
+  .numpad .row:nth-child(3) .key:not(:last-child),
+  .numpad .row:nth-child(4) .key,
+  .numpad .row:last-child .key {
+    margin-top: -0px; /* Поднимаем кнопки на 10px */
+  }
+  
+  /* Стили для кнопки "+" */
+  .numpad .row:nth-child(2) .key:last-child {
+    min-width: 65px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Стили для кнопки "Enter" */
+  .numpad .row:nth-child(3) .key:last-child {
+    min-height: 10px;
+    min-width: 65px;
+    background-color: #f0f0f0;
+  }
+  
+  .numpad .row:nth-child(3) .key:last-child:active {
+    background-color: #ccc;
+  }
+  
+  /* Выравнивание кнопок Shift, Enter, Ctrl */
+  .main-keys .row:nth-child(4) .key.extra-wide-key,
+  .main-keys .row:nth-child(5) .key.extra-wide-key,
+  .main-keys .row:last-child .key.wide-key {
+    align-self: center;
+    min-width: -30px;
+  }
+  
+  /* Уменьшение кнопок Ctrl, Shift, и Alt */
+  .main-keys .row:last-child .key.wide-key {
+    min-width: -30px;
+  }
+  
+  /* Добавляем отступ для выравнивания кнопок 0 и . */
+  .numpad .row:last-child .key:first-child,
+  .numpad .row:last-child .key:last-child {
+    margin-top: -10px;
+  }
