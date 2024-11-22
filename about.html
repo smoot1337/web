@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
     <title>Про мене</title>
-    <header>
-        <h1>Особистий веб-сайт Бойка Андрія</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про мене</a></li>
-            <li><a href="practical.html">Практичні роботи</a></li>
-            <li><a href="labs.html">Лабораторні роботи</a></li>
-        </ul>
-    </nav>
-    
 </head>
 <body>
-    <h2>Про мене</h2>
-    <div class="about-content">
-        <img src="profile.jpg" alt="Фото студента" class="profile-photo">
-        <div class="bio">
-            <p>Ім'я: Андрій. Я студент факультету Технології цифрового розвитку в Державному університеті інформаційно-комунікаційних технологій. Цікавлюсь  програмуванням, зокрема С++ та Python.</p>
-            <p>На цьому сайті ви знайдете мої практичні роботи, лабораторні завдання, а також більше інформації про мене та мої проекти. Завжди відкритий до нових знань і співпраці!</p>
-            <p>Контакти:</p>
-            <ul>
-                <li>Email: <a href="mailto:boykoandrew1337@gmail.com">boykoandrew1337@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/smoot1337" target="_blank">github.com/smoot1337</a></li>
-            </ul>
+    <header class="header">
+        <div class="container">
+            <h1>Особистий веб-сайт Бойка Андрія</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html" class="active">Про мене</a></li>
+                    <li><a href="practical.html">Практичні роботи</a></li>
+                    <li><a href="labs.html">Лабораторні роботи</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <main class="main-content">
+        <section class="about">
+            <div class="container about-container">
+                <img src="profile.jpg" alt="Фото студента" class="profile-photo">
+                <div class="bio">
+                    <p><strong>Ім'я:</strong> Андрій. Я студент факультету Технології цифрового розвитку в Державному університеті інформаційно-комунікаційних технологій.</p>
+                    <p>Цікавлюсь програмуванням, зокрема С++ та Python. На цьому сайті ви знайдете мої практичні роботи, лабораторні завдання, а також більше інформації про мене та мої проекти.</p>
+                    <p>Контакти:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:boykoandrew1337@gmail.com">boykoandrew1337@gmail.com</a></li>
+                        <li>GitHub: <a href="https://github.com/smoot1337" target="_blank">github.com/smoot1337</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Бойко Андрій. Всі права захищено.</p>
+        </div>
+    </footer>
 </body>
 </html>

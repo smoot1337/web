@@ -1,185 +1,123 @@
-/* Загальні стилі для тіла */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+/* Global Reset and Base Styles */
+* {
     margin: 0;
-    padding: 20px;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Стилі заголовків */
-header h1, h2 {
-    text-align: center;
-    color: #222;
+body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin-bottom: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-h2 {
     font-size: 28px;
-}
-
-/* Стиль для меню навігації */
-nav {
-    background-color: #333;
-    padding: 10px 0;
+    color: #4caf50;
+    margin-bottom: 15px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    background-color: #444;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #e0e0e0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #4caf50;
+    color: #121212;
+    transform: scale(1.1);
 }
 
-/* Стилі для форми */
+/* Main Content */
+main {
+    padding: 40px;
+}
+
+main h2 {
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Form Styling */
 form {
     max-width: 600px;
     margin: 0 auto;
-    text-align: left;
-    background-color: #fff;
+    background-color: #1f1f1f;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-label {
-    font-weight: 700;
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
-/* Стилі для полів вводу */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-select {
+form input, form select {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/* Стиль для кнопки відправлення */
-input[type="submit"] {
-    background-color: #444;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
+    margin-bottom: 20px;
+    border: 1px solid #333;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* Стилі для блоку "Про мене" */
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.profile-photo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-.bio {
-    max-width: 600px;
-    text-align: left;
-}
-
-.bio p {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
     font-size: 16px;
-    line-height: 1.6;
 }
 
-.bio ul {
-    list-style: none;
-    padding: 0;
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px #4caf50;
 }
 
-.bio ul li {
-    margin-bottom: 10px;
+form input[type="submit"] {
+    background-color: #4caf50;
+    color: #121212;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.bio ul li a {
-    color: #fff;
-    text-decoration: none;
+form input[type="submit"]:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
 }
 
-.bio ul li a:hover {
-    text-decoration: underline;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* Стилі для загальних посилань */
-a {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-    background-color: #444;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-}
-
-a:hover {
-    background-color: #555;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-a:active {
-    background-color: #555;
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Додатковий стиль для відступів між пунктами */
-p {
-    margin-bottom: 15px;
+    form {
+        padding: 15px;
+    }
 }

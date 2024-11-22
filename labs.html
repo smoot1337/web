@@ -1,38 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Лабораторні роботи - Бойко Андрій</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-    <title>Лабораторні роботи</title>
-    <header>
-        <h1>Особистий веб-сайт Бойка Андрія</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про мене</a></li>
-            <li><a href="practical.html">Практичні роботи</a></li>
-            <li><a href="labs.html">Лабораторні роботи</a></li>
-        </ul>
-    </nav>
-    
 </head>
 <body>
-    <h2>Список лабораторних робіт</h2>
-    <p>
-        <a href="lab1/index.html">Лабораторна робота №1</a>
-    </p>
-    <p>
-        <a href="lab2/index.html">Лабораторна робота №2</a>
-    </p>
-    <p>
-        <a href="lab3/index.html">Лабораторна робота №3</a>
-    </p>
-        <p>
-        <a href="lab4/index.html">Лабораторна робота №4</a>
-    </p>    
+    <header class="header">
+        <div class="container">
+            <h1>Особистий веб-сайт Бойка Андрія</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про мене</a></li>
+                    <li><a href="practical.html">Практичні роботи</a></li>
+                    <li><a href="labs.html" class="active">Лабораторні роботи</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <main class="main-content">
+        <div class="container">
+            <section class="lab-works">
+                <h2>Лабораторні роботи</h2>
+                <div class="work-grid">
+                    <div class="work-card">
+                        <h3>Лабораторна робота №1</h3>
+                        <p>Форма реєстрації</p>
+                        <div class="work-details">
+                            <span class="difficulty">Складність: Легка</span>
+                            <span class="date">Дата: Вересень 2024</span>
+                        </div>
+                        <a href="lab1/index.html" class="work-link">Переглянути</a>
+                    </div>
+                    <div class="work-card">
+                        <h3>Лабораторна робота №2</h3>
+                        <p>CSS Selectors Challenge</p>
+                        <div class="work-details">
+                            <span class="difficulty">Складність: Легка</span>
+                            <span class="date">Дата: Вересень 2024</span>
+                        </div>
+                        <a href="lab2/index.html" class="work-link">Переглянути</a>
+                    </div>
+                    <div class="work-card">
+                        <h3>Лабораторна робота №3</h3>
+                        <p>Створення макета сайту</p>
+                        <div class="work-details">
+                            <span class="difficulty">Складність: Середня</span>
+                            <span class="date">Дата: Жовтень 2024</span>
+                        </div>
+                        <a href="lab3/index.html" class="work-link">Переглянути</a>
+                    </div>
+                    <div class="work-card">
+                        <h3>Лабораторна робота №4</h3>
+                        <p>Створення додатку планера</p>
+                        <div class="work-details">
+                            <span class="difficulty">Складність: Середня</span>
+                            <span class="date">Дата: Жовтень 2024</span>
+                        </div>
+                        <a href="lab4/index.html" class="work-link">Переглянути</a>
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            © 2024 Бойко Андрій. Всі права захищено.
+        </div>
+    </footer>
 </body>
+</html>
