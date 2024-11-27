@@ -92,6 +92,11 @@ body {
     animation: fadeIn 2s ease-out;
 }
 
+.updates-list {
+    padding: 50px 0;
+    animation: fadeIn 2s ease-out;
+}
+
 /* Tables (for schedule and work lists) */
 table {
     width: 100%;
@@ -119,9 +124,9 @@ table th {
 }
 
 .profile-photo {
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.5s, box-shadow 0.5s;
