@@ -196,15 +196,32 @@ a:hover::before {
 }
 
 /* Footer */
-.footer {
-    background: #1f1f1f;
+footer {
+  background-color: #1f1f1f; /* Darker background for footer */
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 3.5s ease-out;
+  
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-weight: 600;
     color: #e0e0e0;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    font-size: 14px;
-    border-top: 1px solid #333;
-    animation: fadeIn 3.5s ease-out;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #4caf50;
+    color: #121212;
+    transform: scale(1.1);
+}
+
+.social-icons i {
+margin-right: 5px; /* Отступ между иконкой и текстом */
 }
 
 /* Responsive Adjustments */
